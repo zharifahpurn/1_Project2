@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booking</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <style>
+    body{
+      background-color: #f4f6f9;
+    }
+  </style>
+</head>
+  <!--Title-->
+  <div class="container-fluid" style="background-color: #bbb;">
+    <div class="row">
+      <div class="col-md-12 text-center mt-3">
+        <h2><b>Rentach - Sistem Peminjaman Ruangan Nurul Fikri</b></h2>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <!-- Navbar -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fasilitas.html">Fasilitas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="booking.html">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="berita.html">Berita</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="us.html">Tentang Kami</a>
+          </li>
+          
+          <li class="nav-item dropdown ml-md-auto">
+            <li class="nav-item">
+              <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                <i class="fas fa-search"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                <i class="fas fa-expand-arrows-alt"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html" role="button">
+                <i class="fas fa-user"></i>
+              </a>
+            </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<body class="hold-transition sidebar-mini">
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-12">
+          <nav aria-label="breadcrumb">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Booking Ruangan</li>
+              </ol>
+            </nav>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10">
+          <h4>Booking Ruangan</h4>
+
+          <form>
+            <div class="form-group row">
+              <p for="text1" class="col-4 col-form-label text-right">Nama Peminjam :</p> 
+              <div class="col-8">
+                <input id="text1" name="text1" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <p for="select" class="col-4 col-form-label text-right">Nama Ruangan :</p> 
+              <div class="col-8">
+                <select id="select" name="select" class="custom-select">
+                  <option value="Aula">Aula</option>
+                  <option value="Ruang Rapat">Ruang Rapat</option>
+                  <option value="Ruang Seminar">Ruang Seminar</option>
+                  <option value="Lab Komputer">Lab Komputer</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <p for="textarea " class="col-4 col-form-label text-right">Deskripsi Kegiatan :</p> 
+              <div class="col-8">
+                <textarea id="textarea" name="textarea" cols="40" rows="5" class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <p class="col-4 text-right">Fasilitas Tambahan :</p> 
+              <div class="col-8">
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input name="checkbox" id="checkbox_0" type="checkbox" class="custom-control-input" value="Sound System"> 
+                  <label for="checkbox_0" class="custom-control-label">Sound System</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input name="checkbox" id="checkbox_1" type="checkbox" class="custom-control-input" value="Wifi"> 
+                  <label for="checkbox_1" class="custom-control-label">Wifi</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input name="checkbox" id="checkbox_2" type="checkbox" class="custom-control-input" value="Layar Besar"> 
+                  <label for="checkbox_2" class="custom-control-label">Layar Besar</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input name="checkbox" id="checkbox_3" type="checkbox" class="custom-control-input" value="Katering"> 
+                  <label for="checkbox_3" class="custom-control-label">Katering</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <p for="text" class="col-4 col-form-label text-right">Tanggal Pinjam :</p> 
+              <div class="col-8">
+                <input id="text" name="text" type="date" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <p for="text2" class="col-4 col-form-label text-right">Kontak Person :</p> 
+              <div class="col-8">
+                <input id="text2" name="text2" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <p for="text3" class="col-4 col-form-label text-right">No. HP :</p> 
+              <div class="col-8">
+                <input id="text3" name="text3" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <p for="text4" class="col-4 col-form-label text-right">Email :</p> 
+              <div class="col-8">
+                <input id="text4" name="text4" type="text" class="form-control">
+              </div>
+            </div> 
+            <div class="form-group row">
+              <div class="offset-4 col-8">
+                <button name="submit" type="submit" class="btn btn-outline-primary">Submit</button>
+                <button name="reset" type="submit" class="btn btn-outline-secondary">Reset</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <div class="container-fluid bottom col-12" style="background-color: #bbb;">
+    <hr>
+    <div class="row">
+      <div class="col-md-8">
+        <p class="text-left ml-3" style="color: dimgrey">
+          <b>Develop By Mahasiswa STT-NF @2023</b>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p class="text-right mr-3" style="color:dimgrey">
+          <b>Author By Kelompok 1 - TI 11</b>
+        </p>
+      </div>
+    </div>
+  </div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>
